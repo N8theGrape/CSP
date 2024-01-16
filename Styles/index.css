@@ -26,3 +26,9 @@ header {
     width: 3vw;
     margin: 0 1.5vw;
 }
+
+.titleArt {
+    height: 3vw;
+    width: auto;
+    margin: 0 1.5vw;
+}
