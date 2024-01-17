@@ -22,22 +22,33 @@
     
     <!-- Footer -->
     <footer>
-      <!-- Background Music -->
-      <audio id="backgroundAudio" loop>
-        <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
-      </audio>
-      <button onclick="toggleAudio()">Toggle Background Music</button>
     </footer>
-
+    
+    <!-- Absolute Elements -->
+    <div>
+      <!-- Audio Button -->
+      <button onclick="toggleAudio()">
+        <img id="toggleImage" src="https://github.com/N8theGrape/CSP/blob/main/Images/TurnMusicOn.png?raw=true" alt="Toggle Music">
+      </button>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="backgroundAudio" loop>
+      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    
     <script>
       var audio = document.getElementById("backgroundAudio");
-  
+      var image = document.getElementById("toggleImage");
+
       function toggleAudio() {
           if (audio.paused) {
               audio.play();
+              image.src = "https://github.com/N8theGrape/CSP/blob/main/Images/TurnMusicOn.png?raw=true";
           } else {
               audio.pause();
+              image.src = "https://github.com/N8theGrape/CSP/blob/main/Images/TurnMusicOff.png?raw=true";
           }
       }
   </script>
