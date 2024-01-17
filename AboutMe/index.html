@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://github.com/N8theGrape/CSP/blob/main/Images/GrapeBot.png?raw=true">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <title>About N8theGrape</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="TITLE" href="#">
+    
+    <button onclick="toggleDucks()">
+      <img id="toggleDucks" src="https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png" alt="Toggle Ducks">
+    </button>
+
+    <span></span>
+		<div>
+      <img src="https://github.com/N8theGrape/CSP/raw/main/Images/GrapeBot.png" alt="Icon" class="titleIcon">
+      <img src="https://github.com/N8theGrape/CSP/raw/main/Images/TitleImage.png" alt="N8theGrape's CSP Labs" class="titleArt">
+      <img src="https://github.com/N8theGrape/CSP/raw/main/Images/GrapeBot.png" alt="Icon" class="titleIcon">
+		</div>
+		<span></span>
+      <button onclick="toggleAudio()">
+          <img id="toggleImage" src="https://github.com/N8theGrape/CSP/raw/main/Images/TurnMusicOff.png" alt="Toggle Music">
+      </button>
+    </header>
+    
+    <!-- Main Body -->
+    <main>
+		<div id="NavBar">
+			<h1 class="HomeButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP">Home</a>
+			</h1>
+			<h1 class="PortfolioButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP/Portfolio">Portfolio</a>
+			</h1>
+			<h1 class="AboutMeButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP/AboutMe">About Me</a>
+			</h1>
+		</div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <!-- Your footer content goes here -->
+    </footer>
+    
+    <!-- Background Music -->
+    <audio id="backgroundAudio" loop>
+      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <audio id="DuckQuack" style="display:none">
+      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/DuckQuack.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>  <hr>
+    
+    <script>
+      var audio = document.getElementById("backgroundAudio");
+      var image = document.getElementById("toggleImage");
+      var DuckButton = document.getElementById("toggleDucks");
+      var canQuack = true;
+      function toggleAudio() {
+          if (audio.paused) {
+              audio.play();
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/TurnMusicOn.png";
+          } else {
+              audio.pause();
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/TurnMusicOff.png";
+          }
+      }
+      function toggleDucks() {
+          if (canQuack) {
+              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
+              canQuack = false;
+          } else {
+              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
+              canQuack = true;
+          }
+      }
+
+      document.addEventListener('keydown', function(e) {
+      if (canQuack/* && e.keyCode == 65*/) {
+        document.getElementById('DuckQuack').pause();
+        document.getElementById('DuckQuack').currentTime = 0;
+        document.getElementById('DuckQuack').play();
+      }
+    });
+    </script>
+  </body>
+</html>
+</html>
