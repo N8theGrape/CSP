@@ -22,14 +22,24 @@
     
     <!-- Footer -->
     <footer>
-    
+      <!-- Background Music -->
+      <audio id="backgroundAudio" loop>
+        <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+      <button onclick="toggleAudio()">Toggle Background Music</button>
     </footer>
-    
-    <!-- Background Music -->
-		<audio autoplay loop>
-      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
-      Your browser does not support the audio tag.
-    </audio>
-    
+
+    <script>
+      var audio = document.getElementById("backgroundAudio");
+  
+      function toggleAudio() {
+          if (audio.paused) {
+              audio.play();
+          } else {
+              audio.pause();
+          }
+      }
+  </script>
   </body>
 </html>
