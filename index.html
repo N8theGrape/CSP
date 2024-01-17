@@ -10,10 +10,9 @@
   <body>
     <!-- Header -->
     <header id="TITLE" href="#">
-		<span></span>
     
     <button onclick="toggleDucks()">
-      <img id="toggleDucks" src="https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png" alt="Toggle Ducks">
+      <img id="toggleImage" src="https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png" alt="Toggle Ducks">
     </button>
 
     <span></span>
@@ -30,7 +29,17 @@
     
     <!-- Main Body -->
     <main>
-      <!-- Your main content goes here -->
+		<div id="NavBar">
+			<h1 class="HomeButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP">Home</a>
+			</h1>
+			<h1 class="PortfolioButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP/Portfolio">Portfolio</a>
+			</h1>
+			<h1 class="AboutMeButton NavItem">
+				<a href="https://n8thegrape.github.io/CSP/AboutMe">About Me</a>
+			</h1>
+		</div>
     </main>
     
     <!-- Footer -->
@@ -43,9 +52,8 @@
       <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
       Your browser does not support the audio tag.
     </audio>
-    <!-- Duck Quack -->
-    <audio id="DuckQuack">
-      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/DuckQuack.mp3" type="audio/mp3">
+    <audio id="DuckQuack" style="display:none">
+      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/DuckQuack.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
 
@@ -69,22 +77,20 @@
       }
       function toggleDucks() {
           if (canQuack) {
-              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
               canQuack = false;
           } else {
-              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
               canQuack = true;
           }
       }
 
       document.addEventListener('keydown', function(e) {
       if (canQuack/* && e.keyCode == 65*/) {
-        document.getElementById('DuckQuack').pause();
-        document.getElementById('DuckQuack').currentTime = 0;
-        document.getElementById('DuckQuack').play();
-
+        document.getElementById('audio').play();
       }
     });
     </script>
   </body>
+</html>
 </html>

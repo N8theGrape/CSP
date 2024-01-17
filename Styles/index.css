@@ -49,3 +49,10 @@ audio {
     width: auto;
     margin: 0;
 }
+
+#NavBar {
+    display: flex;
+}
+.NavItem {
+    margin: 1vw 5vw;
+}
