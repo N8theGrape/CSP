@@ -31,10 +31,11 @@ button {
     margin-left: 10px; /* Adjust the distance from the left */
 }
 
-#toggleImage {
+#toggleImage, #toggleDucks {
     height: 3vw;
     width: auto;
     margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 .titleIcon,
