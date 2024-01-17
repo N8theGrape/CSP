@@ -10,7 +10,13 @@
   <body>
     <!-- Header -->
     <header id="TITLE" href="#">
-		<span></span><span></span><span></span>
+		<span></span>
+    
+    <button onclick="toggleDucks()">
+      <img id="toggleImage" src="https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png" alt="Toggle Ducks">
+    </button>
+
+    <span></span>
 		<div>
       <img src="https://github.com/N8theGrape/CSP/raw/main/Images/GrapeBot.png" alt="Icon" class="titleIcon">
       <img src="https://github.com/N8theGrape/CSP/raw/main/Images/TitleImage.png" alt="N8theGrape's CSP Labs" class="titleArt">
@@ -37,6 +43,10 @@
       <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/Pizzatron3000.mp3" type="audio/mp3">
       Your browser does not support the audio tag.
     </audio>
+    <audio id="DuckQuack" style="display:none">
+      <source src="https://raw.githubusercontent.com/N8theGrape/CSP/main/Music/DuckQuack.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -45,7 +55,8 @@
     <script>
       var audio = document.getElementById("backgroundAudio");
       var image = document.getElementById("toggleImage");
-
+      var DuckButton = document.getElementById("toggleDucks");
+      var canQuack = true;
       function toggleAudio() {
           if (audio.paused) {
               audio.play();
@@ -55,6 +66,21 @@
               image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/TurnMusicOff.png";
           }
       }
+      function toggleDucks() {
+          if (canQuack) {
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
+              canQuack = false;
+          } else {
+              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
+              canQuack = true;
+          }
+      }
+
+      document.addEventListener('keydown', function(e) {
+      if (canQuack/* && e.keyCode == 65*/) {
+        document.getElementById('audio').play();
+      }
+    });
     </script>
   </body>
 </html>
