@@ -17,18 +17,29 @@ header {
     font-size: 3vw;
     font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Align items to the ends */
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-.titleIcon {
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the distance from the left */
+}
+
+#toggleImage {
     height: 3vw;
-    width: 3vw;
-    margin: 0 1.5vw;
+    width: auto;
+    margin-right: 1vw;
 }
 
+.titleIcon,
 .titleArt {
     height: 3vw;
     width: auto;
-    margin: 0 1.5vw;
+    margin: 0;
 }
