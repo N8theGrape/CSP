@@ -69,17 +69,17 @@
       }
       function toggleDucks() {
           if (canQuack) {
-              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
+              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOff.png";
               canQuack = false;
           } else {
-              image.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
+              DuckButton.src = "https://github.com/N8theGrape/CSP/raw/main/Images/DuckOn.png";
               canQuack = true;
           }
       }
 
       document.addEventListener('keydown', function(e) {
       if (canQuack/* && e.keyCode == 65*/) {
-        document.getElementById('audio').play();
+        document.getElementById('DuckQuack').play();
       }
     });
     </script>
