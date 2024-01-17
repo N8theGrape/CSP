@@ -79,7 +79,10 @@
 
       document.addEventListener('keydown', function(e) {
       if (canQuack/* && e.keyCode == 65*/) {
+        document.getElementById('DuckQuack').pause();
+        document.getElementById('DuckQuack').currentTime = 0;
         document.getElementById('DuckQuack').play();
+
       }
     });
     </script>
