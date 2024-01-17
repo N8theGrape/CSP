@@ -31,6 +31,11 @@ button {
     margin-left: 10px; /* Adjust the distance from the left */
 }
 
+audio {
+    display: none;
+}
+
+
 #toggleImage, #toggleDucks {
     height: 3vw;
     width: auto;
