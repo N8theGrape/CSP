@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     padding: 15px;
     color: white;
     width: 100%;
-    font-size: 3vw;
+    font-size: 3dvw;
     font-weight: bold;
     display: flex;
     justify-content: space-between; /* Align items to the ends */
@@ -37,22 +37,22 @@ audio {
 
 
 #toggleImage, #toggleDucks {
-    height: 3vw;
+    height: 3dvw;
     width: auto;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    margin-right: 1dvw;
+    margin-left: 1dvw;
 }
 
 .titleIcon,
 .titleArt {
-    height: 3vw;
+    height: 3dvw;
     width: auto;
     margin: 0;
 }
 
 #NavBar {
     display: flex;
-	padding: 1vw;
+	padding: 1dvw;
 }
 
 .NavButton{
@@ -60,14 +60,14 @@ audio {
     color: #58427c;
     border-radius: 25px;
     height: 100%;
-    margin: 1vw 3vw;
-    padding: 1vw;
-    font-size: 1.5vw;
-    width: 10vw;
+    margin: 1dvw 3dvw;
+    padding: 1dvw;
+    font-size: 1.5dvw;
+    width: 10dvw;
 }
 
 
 .Seperator {
     background-color: #58427c;
-    height: 0.5vw;
+    height: 0.5dvw;
 }
