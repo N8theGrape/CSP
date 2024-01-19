@@ -43,6 +43,11 @@ audio {
     margin-left: 1dvw;
 }
 
+			
+.TitleButton {
+    width: 15vw;
+}
+
 .titleIcon,
 .titleArt {
     height: 3dvw;
