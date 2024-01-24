@@ -1,7 +1,16 @@
+/*
 *:hover {
     animation: wave 1s;
     animation-iteration-count: infinite;
 }
+*/
+
+html {
+    z-index: 1;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 header {
@@ -25,6 +34,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999999999;
 }
 
 button {
@@ -98,13 +108,89 @@ audio {
 #AboutMeText {
     width: 50vw;
     text-align: justify;
+    color: #58427c;
 }
 #SomeoneLikeYouMusic {
     border-radius:12px;
-    margin: 1vw;
+    margin: 0 10vw;
+    padding: 0;
+    width: 80vw;
+    height: 35vw;
 }
+
+#HouseImage {
+    width: 50vw;
+    border: 5px solid #58427cff;
+    border-radius: 2.5vw;;
+}
+
+.w-full {
+    width: 100%;
+}
+.rounded1-top {
+    border-radius: 2.5vw 2.5vw 0 0;
+}
+figcaption {
+    text-align: center;
+    color: #58427c;
+}
+footer {
+    width: 100%;
+}
+
+.aboutMeImage {
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.w-80 {
+    width: 80vw;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.rel-right-15vw {
+    position: relative;
+    right: 15vw;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#AboutMeImages {
+    width: 50vw;
+}
+.aboutMeFigure {
+    width: 50vw;
+}
+
+.imageGroup1 {
+    display: inline-block;
+}
+.imageGroup2 {
+    display: none;
+}
+
+#img1 img, #img2 img, #img3 img, #img4 img{
+    border: 0.375vw solid #58427c;
+    border-radius: 1vw;
+}
+
+#changeImagesButton {
+    border: 0.25vw solid #58427c;
+    border-radius: 0.5vw;
+    font-size: 150%;
+    color: #58427c;
+}
+
 @keyframes wave {
-    0%   { rotate: -1deg; }
-    50%  { rotate:  1deg; }
-    100% { rotate: -1deg; }
+    0%   { rotate: -0.1deg; }
+    50%  { rotate:  0.1deg; }
+    100% { rotate: -0.1deg; }
 }

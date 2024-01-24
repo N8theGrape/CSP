@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- Link to CSS Sheet -->
-        <link rel="stylesheet" href="Styles/index.css">
+        <link rel="stylesheet" href="Styles/styles.css">
 
         <!-- Webpage Title -->
         <title>N8theGrape's Portfolio</title>
@@ -58,12 +58,29 @@
                 <button class="NavButton" onclick="location.href='AboutMe.html';"><b>About Me</b></button>
             </div>
 			<hr class="Seperator">
-			
+            <center>
+                <p>
+                    <b>
+                        No Labs :(
+                    </b>
+                </p>
+            </center>
         </main>
         
         <!-- Footer -->
         <footer>
-            <!-- Your footer content goes here -->
+
+            <!-- Adele -->
+            <iframe 
+                id="SomeoneLikeYouMusic" 
+                src="https://open.spotify.com/embed/track/1zwMYTA5nlNjZxYrvBB2pV?utm_source=generator&theme=0" 
+                width="100%" 
+                height="35" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
         </footer>
 
         <!-- Background Music -->
@@ -75,42 +92,8 @@
             <source src="Music/DuckQuack.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br>  <hr>
         
-        <script>
-            var audio = document.getElementById("backgroundAudio");
-            var image = document.getElementById("toggleImage");
-            var DuckButton = document.getElementById("toggleDucks");
-            var canQuack = true;
-            
-            function toggleAudio() {
-                if (audio.paused) {
-                    audio.play();
-                    image.src = "Images/TurnMusicOn.png";
-                } else {
-                    audio.pause();
-                    image.src = "Images/TurnMusicOff.png";
-                }
-            }
-            function toggleDucks() {
-                if (canQuack) {
-                    DuckButton.src = "Images/DuckOff.png";
-                    canQuack = false;
-                } else {
-                    DuckButton.src = "Images/DuckOn.png";
-                    canQuack = true;
-                }
-            }
-
-            document.addEventListener('keydown', function(e) {
-                if (canQuack/* && e.keyCode == 65*/) {
-                    document.getElementById('DuckQuack').pause();
-                    document.getElementById('DuckQuack').currentTime = 0;
-                    document.getElementById('DuckQuack').play();
-                }
-            });
-        </script>
+        <!-- JavaScript Code -->
+        <script src="JavaScript/code.js"></script>
     </body>
 </html>
