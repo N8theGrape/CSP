@@ -1,14 +1,24 @@
-/*
-*:hover {
-    animation: wave 1s;
-    animation-iteration-count: infinite;
-}
-*/
+/* Main Style Sheet for all pages */
 
 html {
     z-index: 1;
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+header {
+    background-color: #58427c;
+    color: white;    
+    z-index: 2;
+    padding: 15px;
+    width: 100%;
+    font-size: 3dvw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 body {
@@ -22,19 +32,8 @@ body {
     min-height: 100dvh;
 }
 
-header {
-    background-color: #58427c;
-    padding: 15px;
-    color: white;
+footer {
     width: 100%;
-    font-size: 3dvw;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between; /* Align items to the ends */
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999999999;
 }
 
 button {
@@ -47,6 +46,12 @@ button {
 
 audio {
     display: none;
+}
+
+
+figcaption {
+    text-align: center;
+    color: #58427c;
 }
 
 
@@ -87,29 +92,15 @@ audio {
     width: 10dvw;
 }
 
-
 .Seperator {
     background-color: #58427c;
     height: 0.5dvw;
-}
-
-
-.wave {
-    width: 50px;
-    height: 50px;
-    margin-top: 30px;
-    margin-top: 20px;
 }
 
 .music {
     text-align: center;
 }
 
-#AboutMeText {
-    width: 50vw;
-    text-align: justify;
-    color: #58427c;
-}
 #SomeoneLikeYouMusic {
     border-radius:12px;
     margin: 0 10vw;
@@ -118,11 +109,6 @@ audio {
     height: 35vw;
 }
 
-#HouseImage {
-    width: 50vw;
-    border: 5px solid #58427cff;
-    border-radius: 2.5vw;;
-}
 
 .w-full {
     width: 100%;
@@ -130,18 +116,7 @@ audio {
 .rounded1-top {
     border-radius: 2.5vw 2.5vw 0 0;
 }
-figcaption {
-    text-align: center;
-    color: #58427c;
-}
-footer {
-    width: 100%;
-}
 
-.aboutMeImage {
-    width: 100%;
-    border-radius: 1vw;
-}
 
 .w-80 {
     width: 80vw;
@@ -161,36 +136,4 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-#AboutMeImages {
-    width: 50vw;
-}
-.aboutMeFigure {
-    width: 50vw;
-}
-
-.imageGroup1 {
-    display: inline-block;
-}
-.imageGroup2 {
-    display: none;
-}
-
-#img1 img, #img2 img, #img3 img, #img4 img{
-    border: 0.375vw solid #58427c;
-    border-radius: 1vw;
-}
-
-#changeImagesButton {
-    border: 0.25vw solid #58427c;
-    border-radius: 0.5vw;
-    font-size: 150%;
-    color: #58427c;
-}
-
-@keyframes wave {
-    0%   { rotate: -0.1deg; }
-    50%  { rotate:  0.1deg; }
-    100% { rotate: -0.1deg; }
 }
