@@ -20,3 +20,11 @@
 .ProjectImage {
     width: 100% ;
 }
+
+#slowroadGame {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
