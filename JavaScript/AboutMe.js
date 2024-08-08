@@ -37,17 +37,22 @@ function changeImages () {
     updateGroups();
 }
 
+function includesPassword(keyboardString) {
+    for(var index = 0; index< keyboardPassword.length; index++) {
+        if(keyboardString.toLowerCase().includes(keyboardPassword[0].toLowerCase())) {
+            return true;
+        }
+    }
+    return false;
+}
+
 document.addEventListener('keydown', function(e) {
     updateGroups();
     if (e.keyCode === 8) {
         keyboardString = keyboardString.substring(0,keyboardString.length - 1);
     }
     else  if (e.keyCode === 13) {
-        if (
-            keyboardString.toLowerCase().includes(keyboardPassword[0].toLowerCase()) ||
-            keyboardString.toLowerCase().includes(keyboardPassword[1].toLowerCase()) ||
-            keyboardString.toLowerCase().includes(keyboardPassword[1].toLowerCase()) )
-        {
+        if ( includesPassword(keyboardString)){
             authorized = true;
         }
         else {
