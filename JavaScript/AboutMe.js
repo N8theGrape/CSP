@@ -39,7 +39,7 @@ function changeImages () {
 
 function includesPassword(keyboardString) {
     for(var index = 0; index< keyboardPassword.length; index++) {
-        if(keyboardString.toLowerCase().includes(keyboardPassword[0].toLowerCase())) {
+        if(keyboardString.toLowerCase().includes(keyboardPassword[index].toLowerCase())) {
             return true;
         }
     }
