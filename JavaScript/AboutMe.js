@@ -2,10 +2,10 @@ var group1 = document.getElementById("imageGroup1");
 var group2 = document.getElementById("imageGroup2");
 var button = document.getElementById("changeImagesButton");
 var currentGroup = 1;
-var authorized = true;
+var authorized = false;
 
 var keyboardString = "";
-var keyboardPassword = ["Camden", "Bradshaw"];
+var keyboardPassword = ["Camden", "Bradshaw","Luca"];
 
 function updateGroups() {
     if (currentGroup === 1) {
@@ -37,7 +37,7 @@ function changeImages () {
     updateGroups();
 }
 
-/*
+
 document.addEventListener('keydown', function(e) {
     updateGroups();
     if (e.keyCode === 8) {
@@ -58,6 +58,6 @@ document.addEventListener('keydown', function(e) {
         keyboardString += e.key;
     }
 });
-*/
+
 
 updateGroups();
