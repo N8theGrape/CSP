@@ -5,7 +5,7 @@ var currentGroup = 1;
 var authorized = false;
 
 var keyboardString = "";
-var keyboardPassword = ["Camden", "Bradshaw","Luca"];
+var keyboardPassword = ["Camden", "Bradshaw"];
 
 function updateGroups() {
     if (currentGroup === 1) {
