@@ -17,6 +17,9 @@
 #Project_3_2_4 {
     width: 45dvw;
 }
+#Project_4_1_4 {
+    width: 45dvw;
+}
 #Project_1_1_9 .SLIDE {
     width: 100%;
     height: 28vw;
@@ -30,6 +33,11 @@
     height: 28vw;
 }
 #Project_3_2_4 .SLIDE {
+    width: 100%;
+    height: 28vw;
+}
+
+#Project_4_1_4 .SLIDE {
     width: 100%;
     height: 28vw;
 }
