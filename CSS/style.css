@@ -1,0 +1,140 @@
+/* Default Settings */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #333;
+    color: #eee;
+}
+.rainbowBG {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+/* Navigation Bar */
+    /* Default */
+.nav {
+    text-align: center;
+    background: #333;
+    border: 1vw solid black;
+    position:fixed;
+    width:100%;
+    top:-1vw;
+    left:-1vw;
+    min-height: 5vw;
+    z-index: 9;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* Default Elements */
+.nav * {
+    font-size: 1.5vw;
+    margin: auto;
+}
+    /* Default Button */
+.nav button {
+    position: relative;
+    padding: 0.75vw 3vw;
+    border: none;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background: #DDD;
+    width: 15vw;
+}
+    /* Hover Button */
+.nav button:hover {
+    background: #AAA;
+}
+.nav button:active {
+    background: #888;
+}
+
+.nav2 {
+    text-align: center;
+    width:100%;
+    min-height: 5vw;
+    z-index: 9;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* Default Elements */
+.nav2 * {
+    font-size: 1.5vw;
+    margin: auto;
+}
+    /* Default Button */
+.nav2 button {
+    position: relative;
+    padding: 0.75vw 3vw;
+    border: none;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background: #DDD;
+    width: 15vw;
+    box-shadow: 0 0 1vw #111;
+    border: 0.25vw solid #111;
+}
+    /* Hover Button */
+.nav2 button:hover {
+    background: #AAA;
+}
+.nav2 button:active {
+    background: #888;
+}
+
+/* Header */
+    /* Default */
+header {
+    text-align: center;
+    background: #1A1A1A;
+    padding: 15px;
+    height: 10vw;
+    margin-top: 5vw;
+}
+    /* Default Elements */
+header * {
+    color: #eee;
+}
+    /* Header 1 Elements */
+header h1 {
+    font-size: 4vw;
+    position:relative;
+    top: -1vw;
+}
+    /* Header 6 Elements */
+header h2 {
+    font-size: 1.5vw;
+    position:relative;
+    top:-3.5vw;
+}
+
+/* Main Body */
+    /* Default */
+main {
+    /*max-width: 800px; */
+    width: 80%;
+    margin: 1vw auto;
+    margin-bottom: 6vw;
+    padding: 1% 5%;
+    background: #fff;
+    border-radius: 1vw;
+    box-shadow: 0 0 25px #111f;
+    text-align: center;
+}
+    /* Default Elements */
+main * {
+    color: #222;
+    margin: auto;
+}
+main p {
+    font-size: 125%;
+}
+main h1 {
+    color: #222;
+    font-size: 400%;
+}
+

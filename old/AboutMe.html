@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to CSS Sheet -->
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="stylesheet" href="Styles/AboutMe.css">
+
+        <!-- Webpage Title -->
+        <title>About N8theGrape</title>
+
+        <!-- Webpage Title Image-->
+        <link rel="icon" type="image/x-icon" href="Images/GrapeBot.png">
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="TITLE" href="#">
+
+            <!-- Duck Quack Button -->
+            <button onclick="toggleDucks()">
+                <img id="toggleDucks" src="Images/DuckOn.png" alt="Toggle Ducks">
+            </button>
+
+            <!-- Filler Space -->
+            <span></span>
+
+            <!-- Title -->
+            <div>
+                
+                <!-- N8theGrape Robot Image -->
+                <img src="Images/GrapeBot.png" alt="Icon" class="titleIcon">
+
+                <!-- N8theGrape Title Image -->
+                <button onclick="window.location.href='https://n8thegrape.github.io'">
+                    <img src="Images/TitleImage.png" alt="N8theGrape's CSP Labs" class="titleArt">
+                </button>
+
+                <!-- N8theGrape Robot Image -->
+                <img src="Images/GrapeBot.png" alt="Icon" class="titleIcon">
+
+            </div>
+
+            <!-- Filler Space-->
+            <span></span>
+
+            <!-- Background Music Button -->
+            <button onclick="toggleAudio()">
+                <img id="toggleImage" src="Images/TurnMusicOff.png" alt="Toggle Music">
+            </button>
+
+        </header>
+        
+        <!-- Main Body -->
+        <main>
+			<!-- Navigation Bar -->
+            <div id="NavBar">
+                <button class="NavButton" onclick="location.href='index.html';"><b>Home</b></button>
+                <button class="NavButton" onclick="location.href='Portfolio.html';"><b>Portfolio</b></button>
+                <button class="NavButton" onclick="location.href='AboutMe.html';"><b>About Me</b></button>
+            </div>
+            
+            <!-- Seperator -->
+			<hr class="Seperator">
+            
+            <!-- About Me -->
+			<p id="AboutMeText"><b>
+                Hello, I am 16 years old and a junior. I like to go out with my friends, play video games, 
+                and mess around with computer science related things. I'm also a part of our school's robotics 
+                team and I work on software. I am familiar with many programming languages but am the best at:
+                HTML, CSS, JavaScript, and Java. I can work my way around/understand other languages such as 
+                Python and languages similar to those I know such as Kotlin, TypeScript & SCSS. I have used 
+                other languages such as Bash & C# before but only on a basic level. I can also understand 
+                some languages that I can't easily write on my own such as JSON, YAML, and other markup languages.
+            </b></p>
+
+            <!-- Images -->
+            <div id="AboutMeImages" class="z-0">
+                <!-- Main Images -->
+                <div class="flex-center w-80 rel-right-15vw" id="imageGroup1" height="100">
+                    <figure class="aboutMeFigure" id="img1">
+                        <img class="aboutMeImage" src="Images/Friends.png" alt="N8theGrape">
+                        <figcaption><b>Me with my friends</b></figcaption>
+                    </figure>
+                    <figure class="aboutMeFigure" id="img2">
+                        <img class="aboutMeImage" src="Images/Family.png" alt="N8theGrape">
+                        <figcaption><b>Me with my family</b></figcaption>
+                    </figure>
+                </div>
+                <!-- Hidden Images -->
+                <div class="flex-center w-80 rel-right-15vw" id="imageGroup2">
+                    <figure class="aboutMeFigure" id="img3">
+                        <img class="aboutMeImage" src="Images/C1.png" alt="N8theGrape">
+                        <figcaption><b>Me with my best friend</b></figcaption>
+                    </figure>
+                    <figure class="aboutMeFigure" id="img4">
+                        <img class="aboutMeImage" src="Images/C2.png" alt="N8theGrape">
+                        <figcaption><b>Me with my best friend</b></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Hidden Change Images Button-->
+            <center>
+                <button id="changeImagesButton" onclick="changeImages();"><b>Change Images</b></button>
+            </center>
+
+
+            <!-- Seperator -->
+			<hr class="Seperator">
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Adele -->
+            <iframe 
+                id="SomeoneLikeYouMusic" 
+                src="https://open.spotify.com/embed/track/1zwMYTA5nlNjZxYrvBB2pV?utm_source=generator&theme=0" 
+                width="100%" 
+                height="35" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </footer>
+        
+        <!-- Background Music -->
+        <audio id="backgroundAudio" loop>
+            <source src="Music/Pizzatron3000.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <audio id="DuckQuack" style="display:none">
+            <source src="Music/DuckQuack.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- JavaScript Code -->
+        <script src="JavaScript/code.js"></script>
+        <script src="JavaScript/AboutMe.js"></script>
+    </body>
+</html>

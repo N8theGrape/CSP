@@ -1,0 +1,139 @@
+/* Main Style Sheet for all pages */
+
+html {
+    z-index: 1;
+    max-width: 100vw;
+    overflow-x: hidden;
+} 
+
+header {
+    background-color: #58427c;
+    color: white;    
+    z-index: 2;
+    padding: 15px;
+    width: 100%;
+    font-size: 3dvw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+footer {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the distance from the left */
+}
+
+audio {
+    display: none;
+}
+
+
+figcaption {
+    text-align: center;
+    color: #58427c;
+}
+
+
+#toggleImage, #toggleDucks {
+    height: 3dvw;
+    width: auto;
+    margin-right: 1dvw;
+    margin-left: 1dvw;
+}
+
+			
+.TitleButton {
+    width: 15vw;
+}
+
+.titleIcon,
+.titleArt {
+    height: 3dvw;
+    width: auto;
+    margin: 0;
+}
+
+#NavBar {
+    display: flex;
+	padding: 1dvw;
+    flex-direction: center;
+    align-items: center;
+}
+
+.NavButton{
+    border: 2px solid #58427c;
+    color: #58427c;
+    border-radius: 25px;
+    height: 100%;
+    margin: 1dvw 3dvw;
+    padding: 1dvw;
+    font-size: 1.5dvw;
+    width: 10dvw;
+}
+
+.Seperator {
+    background-color: #58427c;
+    height: 0.5dvw;
+}
+
+.music {
+    text-align: center;
+}
+
+#SomeoneLikeYouMusic {
+    border-radius:12px;
+    margin: 0 10vw;
+    padding: 0;
+    width: 80vw;
+    height: 35vw;
+}
+
+
+.w-full {
+    width: 100%;
+}
+.rounded1-top {
+    border-radius: 2.5vw 2.5vw 0 0;
+}
+
+
+.w-80 {
+    width: 80vw;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.rel-right-15vw {
+    position: relative;
+    right: 15vw;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
